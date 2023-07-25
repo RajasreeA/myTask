@@ -301,7 +301,7 @@ export default function FormNext() {
               </label>
               <input
                 type="text"
-                class="form-control form-rounded p-3 md-4"
+                class="form-control form-rounded p-1 md-4"
                 name="location"
                 value={formValue.location}
                 onChange={handleChange}
@@ -314,7 +314,7 @@ export default function FormNext() {
               <MDBInputGroup textAfter=".paperclane.health">
               <input
                 type="text"
-                class="form-control form-rounded  p-2 md-4"
+                class="form-control form-rounded  p-3 md-4"
                 name="domain"
                 value={formValue.domain}
                 onChange={handleChange}
