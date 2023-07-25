@@ -13,6 +13,13 @@ import { options } from "../assets/Data";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from '@mui/material/Alert';
 import SimpleBackdrop from "../components/loader";
+import { FormControl, InputLabel, MenuItem, Select,styled } from '@mui/material';
+const RoundedSelect = styled(Select)({
+  borderRadius: '20px', // Adjust the radius value as per your preference
+  '&.MuiOutlinedInput-input': {
+    padding: '10px', // Adjust the padding as per your preference
+  },
+});
 
 
 export default function Form() {
@@ -143,32 +150,39 @@ export default function Form() {
               value={formValue.name}
               name="name"
               onChange={handleChange}
-              class="form-control form-rounded  p-2"
+              class="form-control form-rounded  p-3"
             />
              <span className="m-2" style={{fontSize:"15px"}}>Enter your name withour Dr.</span>
           </MDBCol>
-          <MDBCol md="5">
-            <label className="m-1">Specialization</label>
-            <select
-              id="specialization"
-              value={formValue.specialization}
-              name="specialization"
-              onChange={handleChange}
-              class="form-control form-rounded mb-4 p-2 md-4"
-              style={{ padding: '8px' }} 
+          <MDBCol md="5" >
+            <FormControl fullWidth 
+            variant="outlined" 
+            // className="p-1"
             >
-              {options.map(({ label, value }) => (
-                <option value={value}  style={{ padding: '8rem' }}>
-                  {label}
-                </option>
-              ))}
-            </select>
+      {/* <InputLabel >Specialization</InputLabel> */}
+      <label className="m-1">Specialization</label>
+      <RoundedSelect
+        labelId="specialization-label"
+        id="specialization"
+        value={formValue.specialization}
+        name="specialization"
+        
+        onChange={handleChange}
+      >
+        {options.map(({ label, value }) => (
+          <MenuItem key={value} value={value}>
+            {label}
+          </MenuItem>
+        ))}
+      </RoundedSelect>
+      
+    </FormControl>
           </MDBCol>
           <MDBCol md="10" className="justify-content-center">
             <label className="m-1">Medical qualifications</label>
             <input
               type="text"
-              class="form-control form-rounded  p-2 md-4"
+              class="form-control form-rounded  p-3 md-4"
               name="qualification"
               value={formValue.qualification}
               onChange={handleChange}
@@ -184,7 +198,7 @@ export default function Form() {
             </label>
             <input
               type="text"
-              class="form-control form-rounded mb-4 p-2 md-4"
+              class="form-control form-rounded mb-4 p-3 md-4"
               name="staff"
               value={formValue.staff}
               onChange={handleChange}
@@ -196,7 +210,7 @@ export default function Form() {
             <input
               type="number"
               name="experience"
-              class="form-control form-rounded mb-4 p-2 md-4"
+              class="form-control form-rounded mb-4 p-3 md-4"
               value={formValue.experience}
               onChange={handleChange}
               placeholder="eg.5"
@@ -207,7 +221,7 @@ export default function Form() {
             <MDBInputGroup textBefore="@">
             <input
               type="text"
-              class="form-control form-rounded mb-4 p-2 md-4"
+              class="form-control form-rounded mb-4 p-3 md-4"
               value={formValue.instagram}
               name="instagram"
               onChange={handleChange}
