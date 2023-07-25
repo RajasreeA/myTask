@@ -1,0 +1,35 @@
+/* Responsive styles for ImageList */
+.image-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 16px;
+  }
+  
+  /* Adjust the gap and number of columns for different screen sizes */
+  @media (max-width: 1280px) {
+    .image-list-container {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-gap: 14px;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .image-list-container {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-gap: 12px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .image-list-container {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-gap: 10px;
+    }
+  }
+  @media (max-width: 414px) {
+    .image-list-container {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-gap: 8px;
+    }
+  }
+  

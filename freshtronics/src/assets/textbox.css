@@ -1,0 +1,21 @@
+/* Style for small screens (up to 600px) */
+@media (max-width: 600px) {
+    .otp-textbox input {
+      width: 2rem;
+    }
+  }
+  
+  /* Style for medium screens (601px to 900px) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .otp-textbox input {
+      width: 3rem;
+    }
+  }
+  
+  /* Style for large screens (901px and above) */
+  @media (min-width: 901px) {
+    .otp-textbox input {
+      width: 4rem;
+    }
+  }
+  
