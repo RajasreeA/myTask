@@ -23,42 +23,110 @@ export const options = [
     value: "",
   },
     {
-      label: "Anaesthia",
-      value: "Anaesthia",
+      label: "Anesthia",
+      value: "Anesthia",
     },
     {
-      label: "Gynacelogist",
-      value: "Gynacelogist",
-    },
-    {
-      label: "Ayurveda",
-      value: "Ayurveda",
-    },
-    {
-      label: "Counselling Psychologist",
-      value: "Counselling Psychologist",
-    },
-    {
-      label: "Psychologist",
-      value: "Psychologist",
-    },
-    {
-      label: "Counselor",
-      value: "Counselor",
-    },
-    {
-      label: "Counselling Psychologist",
-      value: "Counselling Psychologist",
+      label: "Gynaecologist",
+      value: "Gynaecologist",
     },
     {
       label: "Clinical Psychologist",
       value: "Clinical Psychologist",
     },
     {
+      label: "Counselling Psychologist",
+      value: "Counselling Psychologist",
+    },
+    {
       label: "Therapist",
       value: "Therapist",
     },
-  
+    {
+      label: "Counselor",
+      value: "Counselor",
+    },
+    {
+      label: "Psychologist",
+      value: "Psychologist",
+    },
+    {
+      label: "Ayurveda",
+      value: "Ayurveda",
+    },
+    {
+      label: "Cardiology",
+      value: "Cardiology",
+    },
+    {
+      label:"Critical Care",
+      value:"Critical Care"
+    },
+    {
+      label:"Dentist",
+      value:"Dentist"
+    },
+    {
+      label:"Dermatology",
+      value:"Dermatology"
+    },
+    {
+      label:"Diabetology",
+      value:"Diabetology"
+    },
+    {
+      label:"General Physician",
+      value:"General Physician"
+    },
+    {
+      label:"Endocrinology",
+      value:"Endocrinology"
+    },
+    {
+      label:"ENT",
+      value:"ENT"
+    },
+    {
+      label:"Family Physician",
+      value:"Family Physician"
+    },
+    {
+      label:"Gastrenterology",
+      value:"Gastrenterology",
+
+    },
+    {
+      label:"Hematology",
+      value:"Hematology"
+    },
+    {
+      label:"Homeopathy",
+      value:"Homeopathy"
+    },
+    {
+      label:"Infection Control",
+      value:"Infection Control"
+    },
+    {
+      label:"IVF",
+      value:"IVF"
+    },
+    {
+      label:"Nephrology",
+      value:"Nephrology"
+    },
+    {
+      label:"Unani",
+      value:"Unani"
+    },
+    {
+      label:"Urology",
+      value:"Urology"
+    }
+
+
+   
+
   ];
 
 export const buttonValues=[

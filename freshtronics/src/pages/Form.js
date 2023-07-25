@@ -18,7 +18,7 @@ import SimpleBackdrop from "../components/loader";
 export default function Form() {
   const [formValue, setFormValue] = useState({
     name: "",
-    specialization: "Anaesthia",
+    specialization: "",
     medicalqualification: "",
     staff: "",
     experience:"",
@@ -155,9 +155,10 @@ export default function Form() {
               name="specialization"
               onChange={handleChange}
               class="form-control form-rounded mb-4 p-2 md-4"
+              style={{ padding: '8px' }} 
             >
               {options.map(({ label, value }) => (
-                <option value={value}>
+                <option value={value}  style={{ padding: '8rem' }}>
                   {label}
                 </option>
               ))}
