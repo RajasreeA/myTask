@@ -256,7 +256,7 @@ export default function FormNext() {
               <div className="m-2">
               <div style={{ maxWidth: "100%" }}>
   <ImageList
-    style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 0.15fr))", gap: "10px" }}
+    style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "10px" }}
   >
     {data.map((item, index) => (
       <ImageListItem key={item} className="m-2" id={index}>
@@ -292,7 +292,7 @@ export default function FormNext() {
 
               >
                 <div
-    style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(100px,0.15fr))", gap: "3px" }}
+    style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(100px,1fr))", gap: "9.5px" }}
 
                 >{boxes}</div>
               </div>
