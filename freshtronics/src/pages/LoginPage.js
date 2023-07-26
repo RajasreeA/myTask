@@ -215,7 +215,7 @@ function LoginPage() {
               <MDBCardImage
                 src={LoginImage}
                 alt="phone"
-                className="rounded-t-5 p-2 m-5 pr-15 rounded-tr-lg-0"
+                className="rounded-t-5 p-2 m-2 pr-10 rounded-tr-lg-0"
                 fluid
               />
             </MDBCol>

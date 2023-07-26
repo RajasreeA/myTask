@@ -254,34 +254,32 @@ export default function FormNext() {
                 Clinic and E-Rx.
               </div>
               <div className="m-2">
-              <div className="image-list-container"> {/* Add a container for the ImageList */}
-      <ImageList
-        style={{ width: "100%" }}
-        cols={5} // Default number of columns for larger screens
-        gap={16} // Add some gap between images
-      >
-        {data.map((item, index) => (
-          <ImageListItem key={item} className="m-2" id={index}>
-            <img
-              src={item}
-              srcSet={item}
-              name="clinic"
-              value={item}
-              loading="lazy"
-              style={{
-                backgroundColor: "white",
-                boxShadow: "1px 1px 2px 2px whitesmoke",
-                cursor: "pointer",
-                outline: selectedImage === item ? "5px dashed blue" : "",
-                width: "100%", // Ensure the image takes the full width of its container
-              }}
-              className="p-2"
-              onClick={(event) => handleChange(event, index, item, "image")}
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
-    </div>
+              <div style={{ maxWidth: "100%" }}>
+  <ImageList
+    style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "10px" }}
+  >
+    {data.map((item, index) => (
+      <ImageListItem key={item} className="m-2" id={index}>
+        <img
+          src={item}
+          srcSet={item}
+          name="clinic"
+          value={item}
+          loading="lazy"
+          style={{
+            backgroundColor: "white",
+            boxShadow: "1px 1px 2px 2px whitesmoke",
+            cursor: "pointer",
+            outline: selectedImage === item ? "5px dashed blue" : "",
+            width: "100%", // Ensure the image takes the full width of its container
+          }}
+          className="p-2"
+          onClick={(event) => handleChange(event, index, item, "image")}
+        />
+      </ImageListItem>
+    ))}
+  </ImageList>
+</div>
                 <Divider />
               </div>
             </MDBCol>
@@ -294,7 +292,7 @@ export default function FormNext() {
                 <div style={{ display: "flex" }}>{boxes}</div>
               </div>
             </MDBCol>
-            <MDBCol md="6">
+            <MDBCol md="6" >
               <label className="m-2">
                 Location Link{" "}
                 <span style={{ fontSize: "1rem" }}>(optional)</span>
@@ -314,7 +312,7 @@ export default function FormNext() {
               <MDBInputGroup textAfter=".paperclane.health">
               <input
                 type="text"
-                class="form-control form-rounded  p-3 md-4"
+                class="form-control form-rounded w-80"
                 name="domain"
                 value={formValue.domain}
                 onChange={handleChange}
