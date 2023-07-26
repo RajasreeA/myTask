@@ -256,7 +256,7 @@ export default function FormNext() {
               <div className="m-2">
               <div style={{ maxWidth: "100%" }}>
   <ImageList
-    style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "10px" }}
+    style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 0.15fr))", gap: "10px" }}
   >
     {data.map((item, index) => (
       <ImageListItem key={item} className="m-2" id={index}>
@@ -288,8 +288,13 @@ export default function FormNext() {
               <div className="m-2" style={{ fontSize: "18px", wordSpacing: "2px" }}>
                 We use it to theme your website
               </div>
-              <div className="m-2">
-                <div style={{ display: "flex" }}>{boxes}</div>
+              <div className="m-2" 
+
+              >
+                <div
+    style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(100px,0.15fr))", gap: "3px" }}
+
+                >{boxes}</div>
               </div>
             </MDBCol>
             <MDBCol md="6" >
