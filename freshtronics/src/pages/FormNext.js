@@ -314,7 +314,7 @@ export default function FormNext() {
             </MDBCol>
             <MDBCol md="4">
               <label className="m-2">Choose your domain</label>
-              <MDBInputGroup textAfter=".paperclane.health">
+              <MDBInputGroup textAfter=".paperclane.health" style={{padding:"none"}}>
               <input
                 type="text"
                 class="form-control form-rounded w-80"
